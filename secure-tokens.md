@@ -24,11 +24,9 @@ As of writing this, we generate unique tokens for each new repository, for each 
 6. This will output something like the following:
    ```
    Please add the following to your .travis.yml file:
-
-  secure: "QEQUy9IvdWbxcMTub3VvH4Ru2sCI3Ze/bWJ2pammucjQ1u1hqfeJf3NAFOlfrbpx52xlIiqgBwm6u2sDRZ69sLYkak/je5GCtE9rLhxoqiS1l6GlRZ9qnBrW7e790ja4aJdjeazULE3F6kgJwcy8E3qLA5eQOt9kdzevSU50AIQ="
-
-  Pro Tip: You can add it automatically by running with --add.
-  ```
+   secure: "QEQUy9IvdWbxcMTub3VvH4Ru2sCI3Ze/bWJ2pammucjQ1u1hqfeJf3NAFOlfrbpx52xlIiqgBwm6u2sDRZ69sLYkak/je5GCtE9rLhxoqiS1l6GlRZ9qnBrW7e790ja4aJdjeazULE3F6kgJwcy8E3qLA5eQOt9kdzevSU50AIQ="
+   Pro Tip: You can add it automatically by running with --add.
+   ```
 7. (Pro Pro Tip: Dont use `--add` because it reformats the `.travis.yml` and strips comments. No fun.)
 8. Copy the `secure:` bit, and add it to the array of `env.global` in the `.travis.yml`. Make sure to add a comment mentioning that this is the SAUCE_ACCESS_KEY.
 9. You also need to add `SAUCE_USERNAME=chaijs-{repo}` (where `{repo}` is the name of the repository). This doesn't need to be encrypted, so you can add it in plaintext to the `.travis.yml`.
@@ -46,12 +44,10 @@ As of writing this, we generate unique tokens for each new repository, for each 
 4. Copy the UUID part, and prepend `NPM_TOKEN=` to this. You should end up with something like `NPM_TOKEN=d9167f44-edfc-4eb3-b0d3-310b7e75cb40` on your clipboard.
 5. In the repository folder (on a Mac), run `pbpaste | travis encrypt -r chaijs/{repo}` (where `{repo}` is the repo name)
 6. This will output something like the following:
-   ```
+  ```
    Please add the following to your .travis.yml file:
-
-  secure: "QEQUy9IvdWbxcMTub3VvH4Ru2sCI3Ze/bWJ2pammucjQ1u1hqfeJf3NAFOlfrbpx52xlIiqgBwm6u2sDRZ69sLYkak/je5GCtE9rLhxoqiS1l6GlRZ9qnBrW7e790ja4aJdjeazULE3F6kgJwcy8E3qLA5eQOt9kdzevSU50AIQ="
-
-  Pro Tip: You can add it automatically by running with --add.
+     secure: "QEQUy9IvdWbxcMTub3VvH4Ru2sCI3Ze/bWJ2pammucjQ1u1hqfeJf3NAFOlfrbpx52xlIiqgBwm6u2sDRZ69sLYkak/je5GCtE9rLhxoqiS1l6GlRZ9qnBrW7e790ja4aJdjeazULE3F6kgJwcy8E3qLA5eQOt9kdzevSU50AIQ="
+     Pro Tip: You can add it automatically by running with --add.
   ```
 7. (Pro Pro Tip: Dont use `--add` because it reformats the `.travis.yml` and strips comments. No fun.)
 8. Copy the `secure:` bit, and add it to the array of `env.global` in the `.travis.yml`. Make sure to add a comment mentioning that this is the NPM_TOKEN, and copy the last section of the token - so that we can revoke it if we need to.
@@ -69,11 +65,10 @@ As of writing this, we generate unique tokens for each new repository, for each 
 6. This will output something like the following:
    ```
    Please add the following to your .travis.yml file:
+   secure: "QEQUy9IvdWbxcMTub3VvH4Ru2sCI3Ze/bWJ2pammucjQ1u1hqfeJf3NAFOlfrbpx52xlIiqgBwm6u2sDRZ69sLYkak/je5GCtE9rLhxoqiS1l6GlRZ9qnBrW7e790ja4aJdjeazULE3F6kgJwcy8E3qLA5eQOt9kdzevSU50AIQ="
 
-  secure: "QEQUy9IvdWbxcMTub3VvH4Ru2sCI3Ze/bWJ2pammucjQ1u1hqfeJf3NAFOlfrbpx52xlIiqgBwm6u2sDRZ69sLYkak/je5GCtE9rLhxoqiS1l6GlRZ9qnBrW7e790ja4aJdjeazULE3F6kgJwcy8E3qLA5eQOt9kdzevSU50AIQ="
-
-  Pro Tip: You can add it automatically by running with --add.
-  ```
+   Pro Tip: You can add it automatically by running with --add.
+   ```
 7. (Pro Pro Tip: Dont use `--add` because it reformats the `.travis.yml` and strips comments. No fun.)
 8. Copy the `secure:` bit, and add it to the array of `env.global` in the `.travis.yml`. Make sure to add a comment mentioning that this is the GH_TOKEN.
 9. Submit a PR to the respective repository.
