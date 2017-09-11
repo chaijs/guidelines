@@ -16,6 +16,24 @@ We support Node.js, following its LTS policy. [Node.js' release cycle is documen
 
 We validate our support for Node.js by running Continuous Integration testing our projects in the latest release of every major version - for example at the time of writing the current LTS release version is `6.11.13`; we will test this version but none of the earlier releases in the 6.0 branch.
 
+##### What does this look like?
+
+The following predicts our support cycle until 2020. This is an estimate and may change based on the Node.js release cycle.
+
+ - We will always have hard support for the latest version
+ - Node.js 4 will be supported between 2015-09-08 to 2018-04-01
+ - Node.js 5 will be supported between 2015-10-29 to 2018-04-01
+ - After 2018-04-01 the oldest supported version will be v6
+ - Node.js 6 will be supported between 2016-04-26 to 2019-04-01		
+ - Node.js 7 will be supported between 2016-10-25 to 2019-04-01
+ - After 2018-04-01 the oldest supported version will be v8
+ - Node.js 8 will be supported between 2017-05-30 to around 2019-12-31
+ - Node.js 9 will be supported between around 2018-04-01 to around 2019-12-31
+ - After around 2019-12-31 the oldest supported version will be v10
+ - Node.js 10 will be supported between around 2018-10-01 to around 2020-04-01
+ - Node.js 11 will be supported between around 2019-04-01 to around 2020-04-01
+ - After 2020-04-01 the oldest supported version will be Node.js 12
+
 #### Firefox
 
 We support Firefox from it's _Extended Support Release_ (ESR) up until the _latest_ released version. [Firefox's ESR release cycle is documented here](https://www.mozilla.org/en-US/firefox/organizations/faq/) and can be effectively summarised as: a new ESR release is made approximately every year, while new regular releases are made every 6 weeks. For us this means we essentially support a years worth of Firefox releases.
@@ -24,37 +42,108 @@ We support Firefox from it's _Extended Support Release_ (ESR) up until the _late
 
 We validate our support for Node.js by running Continuous Integration testing our projects in both the latest ESR of Firefox, as well as the latest version of Firefox. Any versions inbetween are not tested as it is unlikely that there will be failures in specific versions between the ESR and latest releases that aren't reflected in one or the other.
 
+##### What does this look like?
+
+The following predicts our support cycle until 2020. This is an estimate and may change based on the Firefox release cycle.
+
+ - We will always have hard support for the latest version
+ - Firefox ESR 52 will be supported between 2017-08-08 to 2018-06-26
+ - All versions of Firefox between ESR 52 to 59 will be supported until 2018-06-26
+ - After around 2018-06-26 the oldest supported version will be 59 ESR
+ - Firefox ESR 59 will be supported between around 2018-03-01 to 2019-06-01
+ - All versions of Firefox between ESR 59 to 66 will be supported until around 2019-06-01
+ - After around 2019-06-01 the oldest supported version will be 66 ESR
+ - Firefox ESR 73 will be supported between around 2019-03-01 to 2020-06-01
+ - All versions of Firefox between ESR 66 to 73 will be supported until around 2020-06-01
+ - After around 2020-06-01 the oldest supported version will be 73 ESR
+ 
 #### Chrome
 
-Chrome has no Extended or Long Term Support cycle, and as such only the latest version so Chrome is officially supported by Google. We provide soft-support for Chrome releases up to a year old (that is, while we do not test any older releases, if a user finds a bug we will fix it).
+Chrome has no Extended or Long Term Support cycle, and as such only the latest version of Chrome is officially supported by Google. We provide soft-support for Chrome releases up to a year old (that is, while we do not test any older releases, if a user finds a bug we will fix it).
 
 ##### Validating Chrome support
 
 We validate our support for Chrome by running Continuous Integration testing for the latest version of Chrome. Older versions aren't tested because this is not easily available in our Continuous Integration environments.
 
+##### What does this look like?
+
+The following predicts our support cycle until 2020. This is an estimate and may change based on the Chrome release cycle.
+
+ - We will always have hard support for the latest version
+ - Chrome 54 will receive soft-support until around 2017-10-01
+ - Chrome 55 will receive soft-support until around 2017-12-01
+ - Chrome 56 will receive soft-support until around 2018-02-01
+ - Chrome 57 will receive soft-support until around 2018-03-01
+ - Chrome 58 will receive soft-support until around 2018-04-01
+ - Chrome 59 will receive soft-support until around 2018-06-01
+ - Chrome 60 will receive soft-support until around 2018-07-01
+ - Chrome 61 will receive soft-support until around 2018-09-01
+ - Chrome 62 will receive soft-support until around 2018-10-01
+ - Chrome 63 will receive soft-support until around 2018-11-01
+ - Chrome 64 will receive soft-support until around 2018-12-01
+ - Chrome 65 will receive soft-support until around 2019-01-01
+ - Chrome 66 will receive soft-support until around 2019-02-01
+ - Chrome 67 will receive soft-support until around 2019-03-01
+ - Chrome 68 will receive soft-support until around 2019-04-01
+ - Chrome 69 will receive soft-support until around 2019-05-01
+ - Chrome 70 will receive soft-support until around 2019-06-01
+ - Chrome 71 will receive soft-support until around 2019-07-01
+ - Chrome 72 will receive soft-support until around 2019-08-01
+ - Chrome 73 will receive soft-support until around 2019-09-01
+ - Chrome 74 will receive soft-support until around 2019-10-01
+ - Chrome 75 will receive soft-support until around 2019-11-01
+ - Chrome 76 will receive soft-support until around 2019-12-01
+ - Chrome 77 will receive soft-support until around 2020-01-01
+ 
+
 #### Safari (MacOS and iOS)
 
-Safari is tied to the MacOS and iOS operating system releases, of which Apple supports the last 3 releases in each (this equates to roughly 3 years, as a new MacOS and iOS release is made every year), however Apple also releases updates for Safari versions for the last 3 _desktop_ operating system versions. [Apple's support notes for security releases can be found here](https://support.apple.com/en-us/HT201222). Information around Safari releases can be a little tricky to find, and Apple does not have sufficient support documentation around this - the best place to find this information is on the [Wikipedia entry for Safari version history](https://en.wikipedia.org/wiki/Safari_version_history). To demonstrate how the release cycle works; iOS 8 and MacOS 10.10 both shipped with Safari 8, iOS9 and MacOS 10.11 shipped with Safari 9, iOS10 and MacOS 10.12 shipped Safari 10 and iOS11 and MacOS 10.13 shipped with Safari 11. Safari 10 was backported as an update to MacOS 10.11 and 10.10 users, as was Safari 11 to MacOS 10.12 and 10.11 users. The iOS version of Safari remains fixed.
+Safari is tied to the MacOS and iOS operating system releases, of which Apple supports the last 3 releases in each (this equates to roughly 3 years, as a new MacOS and iOS release is made every year), however Apple also releases updates for Safari versions for the last 3 _desktop_ operating system versions. [Apple's support notes for security releases can be found here](https://support.apple.com/en-us/HT201222). Information around Safari releases can be a little tricky to find, and Apple does not have sufficient support documentation around this - the best place to find this information is on the [Wikipedia entry for Safari version history](https://en.wikipedia.org/wiki/Safari_version_history). To demonstrate how the release cycle works; iOS 8 and MacOS 10.10 both shipped with Safari 8, iOS9 and MacOS 10.11 shipped with Safari 9, iOS10 and MacOS 10.12 shipped Safari 10 and iOS11 and MacOS 10.13 shipped with Safari 11. Safari 10 was backported as an update to MacOS 10.11 and 10.10 users, as was Safari 11 to MacOS 10.12 and 10.11 users. The iOS version of Safari remains fixed. Essentially this means we will continue to support 3 years worth of Safari releases.
 
 ##### Validating Safari support
 
 We validate Safari support by running Continuous Integration testing for the oldest supported version of iOS and MacOS, as well as the latest supported versions of both. Any versions inbetween are not tested as it is unlikely that there will be failures in specific versions between the oldest supported version and the latest release that aren't reflected in one or the other.
 
+##### What does this look like?
+
+The following predicts our support cycle until 2020. This is an estimate and may change based on the Safari release cycle.
+
+ - We will always have hard support for the latest version
+ - Safari 8 will receive support until around 2017-10-01
+ - Safari 9 will receive support until around 2018-10-01
+ - Safari 10 will receive support until around 2019-10-01
+ - Safari 11 will receive support until around 2020-10-01
+
 #### Edge
 
-Microsoft have no documentation of the Microsoft Edge Support Cycle. We currently support the latest release of Microsoft Edge, with soft-support for public up to a year old (that is, we do not test older releases, but if a user finds a bug we will fix it).
+Microsoft have no documentation of the Microsoft Edge Support Cycle. Public releases tend to be made around 6±2 months. We currently support the latest release of Microsoft Edge, with soft-support for public releases up to a year old (that is, we do not test older releases, but if a user finds a bug we will fix it).
 
 ##### Validating Edge support
 
 We validate support of Edge by running Continuous Integration testing for the latest version. Older versions aren't tested due to build time constraints.
 
+##### What does this look like?
+
+The following predicts our support cycle until 2020. This is an estimate and may change based on the Safari release cycle.
+
+ - We will always have hard support for the latest version
+ - Edge 15 will receive soft-support until around 2018-04-01
+ - Edge 16 will receive soft-support until around 2018-10-01
+ - Edge 17 will receive soft-support until around 2019-04-01
+ - Edge 18 will receive soft-support until around 2019-10-01
+ - Edge 19 will receive soft-support until around 2020-04-01
+
 #### Internet Explorer
 
-[Microsoft have officially stopped support for Internet Explorer 10 and below since January 2016](https://www.microsoft.com/en-gb/windowsforbusiness/end-of-ie-support), but still continue to support Internet Explorer 11 in Windows 7, 8 and 10. The end-of-life date for Windows 10 is October 25 as explained in the [Microsoft LifeCycle Fact sheet](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet), and so we can expect to support Internet Explorer 11 until then. We do not support older versions of Internet Explorer.
+[Microsoft have officially stopped support for Internet Explorer 10 and below since January 2016](https://www.microsoft.com/en-gb/windowsforbusiness/end-of-ie-support), but still continue to support Internet Explorer 11 in Windows 7, 8 and 10. The end-of-life date for Windows 10 is 2025-10-14 as explained in the [Microsoft LifeCycle Fact sheet](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet), and so we can expect to support Internet Explorer 11 until then. We do not support older versions of Internet Explorer.
 
 ##### Validating Internet Explorer support
 
 We validate support of Internet Explorer 11 by running Continuous Integration testing for it. 
+
+##### What does this look like?
+
+ - We will support IE11 until around 2025-10-14
 
 #### Opera, Maxthon, Camino, Konqueror, OmniWeb, <Insert Browser Here>
 
@@ -80,6 +169,12 @@ If you would like the latest version of a project to support an older platform, 
 
 This is an open source project, where all of the maintainers or contributors are working on this during free time, or company-sponsored time. Existing support has effectively been paid for by the donation of time from the maintainers, or by existing company sponsorhip. Out-of-cycle support requires additional work by the project maintainers, that time needs to be paid for somehow.
 
-#### What if I find a bug in a supported engine or browser?
+#### What if I find a bug in a supported platform?
 
 If you are using the latest version of a chai project, and find a bug in a version we claim to support, then please raise a bug in the issue tracker for that project. It is likely that a patch-release will be made to fix this bug, where possible.
+
+#### What does it mean to "stop supporting" a platform version? Will that version suddenly stop working?
+
+When a new version of a platform is released, we will immediately begin supporting it, and as soon as we can attempt to add Continuous Integration tests for this version. As older versions move to end-of-life, they will continue to be tested until the next Major Version release of a specific project, and the support will be dropped in the next major version.
+
+For example, currently Chai@4 supports Node.js@4. All releases of Chai@4 will continue to support Node.js@4. If Chai@5 is released _before_ April 2018 (Node.js@4 end-of-life date) then all versions of Chai@5 will continue to support Node.js@4, however, if Chai@5 is released _after_ April 2018 then Chai@5 will _not_ support Node.js@4, instead moving to the next supported version - Node.js@6.
