@@ -46,9 +46,9 @@ As of writing this, we generate unique tokens for each new repository, for each 
 6. This will output something like the following:
   ```
    Please add the following to your .travis.yml file:
-     secure: "QEQUy9IvdWbxcMTub3VvH4Ru2sCI3Ze/bWJ2pammucjQ1u1hqfeJf3NAFOlfrbpx52xlIiqgBwm6u2sDRZ69sLYkak/je5GCtE9rLhxoqiS1l6GlRZ9qnBrW7e790ja4aJdjeazULE3F6kgJwcy8E3qLA5eQOt9kdzevSU50AIQ="
-     Pro Tip: You can add it automatically by running with --add.
-  ```
+   secure: "QEQUy9IvdWbxcMTub3VvH4Ru2sCI3Ze/bWJ2pammucjQ1u1hqfeJf3NAFOlfrbpx52xlIiqgBwm6u2sDRZ69sLYkak/je5GCtE9rLhxoqiS1l6GlRZ9qnBrW7e790ja4aJdjeazULE3F6kgJwcy8E3qLA5eQOt9kdzevSU50AIQ="
+   Pro Tip: You can add it automatically by running with --add.
+   ```
 7. (Pro Pro Tip: Dont use `--add` because it reformats the `.travis.yml` and strips comments. No fun.)
 8. Copy the `secure:` bit, and add it to the array of `env.global` in the `.travis.yml`. Make sure to add a comment mentioning that this is the NPM_TOKEN, and copy the last section of the token - so that we can revoke it if we need to.
 9. **DELETE `/tmp/chai-delete-me`**. On the command line this is `rm -f /tmp/chai-delete-me`.
@@ -66,7 +66,6 @@ As of writing this, we generate unique tokens for each new repository, for each 
    ```
    Please add the following to your .travis.yml file:
    secure: "QEQUy9IvdWbxcMTub3VvH4Ru2sCI3Ze/bWJ2pammucjQ1u1hqfeJf3NAFOlfrbpx52xlIiqgBwm6u2sDRZ69sLYkak/je5GCtE9rLhxoqiS1l6GlRZ9qnBrW7e790ja4aJdjeazULE3F6kgJwcy8E3qLA5eQOt9kdzevSU50AIQ="
-
    Pro Tip: You can add it automatically by running with --add.
    ```
 7. (Pro Pro Tip: Dont use `--add` because it reformats the `.travis.yml` and strips comments. No fun.)
