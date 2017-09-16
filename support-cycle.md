@@ -1,6 +1,6 @@
 ## Supported Cycle
 
-To ensure a consistent level of compatibility & support in our projects, each project under the Chai organisations must strictly adhere to a standardised lifecycle support policy, and platform support policy, as document below.
+To ensure a consistent level of compatibility & support in our projects, each project under the Chai organisation must strictly adhere to a standardised lifecycle support policy, and platform support policy, as documented below.
 
 ### Supported Lifecycle
 
@@ -26,7 +26,7 @@ The following predicts our support cycle until 2020. This is an estimate and may
  - After 2018-04-01 the oldest supported version will be v6
  - Node.js 6 will be supported between 2016-04-26 to 2019-04-01		
  - Node.js 7 will be supported between 2016-10-25 to 2019-04-01
- - After 2018-04-01 the oldest supported version will be v8
+ - After 2019-04-01 the oldest supported version will be v8
  - Node.js 8 will be supported between 2017-05-30 to around 2019-12-31
  - Node.js 9 will be supported between around 2018-04-01 to around 2019-12-31
  - After around 2019-12-31 the oldest supported version will be v10
@@ -124,7 +124,7 @@ We validate support of Edge by running Continuous Integration testing for the la
 
 ##### What does this look like?
 
-The following predicts our support cycle until 2020. This is an estimate and may change based on the Safari release cycle.
+The following predicts our support cycle until 2020. This is an estimate and may change based on the Edge release cycle.
 
  - We will always have hard support for the latest version
  - Edge 15 will receive soft-support until around 2018-04-01
