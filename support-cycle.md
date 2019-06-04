@@ -142,6 +142,7 @@ We validate support of Internet Explorer 11 by running Continuous Integration te
 
 ##### What does this look like?
 
+ - We do not support IE10 or below
  - We will support IE11 until around 2025-10-14
 
 #### Opera, Maxthon, Camino, Konqueror, OmniWeb, <Insert Browser Here>
