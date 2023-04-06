@@ -6,7 +6,7 @@ We cannot store these in plaintext, because that means anyone who had them could
 
 ### Who can access the real tokens?
 
-The users in the [token-bearers](https://github.com/orgs/chaijs/teams/token-bearers) team can view, create and revoke secure repository tokens. If you need a token created or regenerated for your repository, you should @mention the token-bearers team, so they may generate some tokens for your repository.
+The users in the [token-bearers](https://github.com/orgs/chaijs/teams/token-bearers) has access to https://github.com/chaijs/token-bearers repository which contains instructions to log into the `chaijs` npm account. If you need a token created or regenerated for your repository, you should @mention the token-bearers team, so they may generate some tokens for your repository.
 
 ### How are the tokens generated?
 
